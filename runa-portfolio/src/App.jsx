@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './component/Navigation/NavBar';
 import Footer from './component/Navigation/Footer';
@@ -9,8 +9,34 @@ import About from './component/About/About';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css"; 
 
-
 function App() {
+  useEffect(() => {
+    document.body.style.cursor = 'none';
+  
+    const createBubble = (x, y) => {
+      const bubble = document.createElement('div');
+      bubble.className = 'bubble-cursor';
+      bubble.style.left = `${x}px`;
+      bubble.style.top = `${y}px`;
+      document.body.appendChild(bubble);
+  
+      setTimeout(() => {
+        bubble.remove();
+      }, 1000); // 泡泡显示时间
+    };
+  
+    const handleMouseMove = (e) => {
+      createBubble(e.clientX, e.clientY);
+    };
+  
+    window.addEventListener('mousemove', handleMouseMove);
+  
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);  
+  
+
   return (
     <Router>
       <NavBar />
