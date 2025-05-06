@@ -3,30 +3,6 @@ import "../../index.css";
 
 function About() {
   return (
-    // <section className="about-section">
-    //   <h1 className="about-header">Hi there, this is Runa!</h1>
-    //   <div className="about-intro">
-    //     {/* <img src="/images/me.jpg" alt="Runa portrait" className="about-img" /> */}
-    //     <p className="about-text">
-    //       I’m a UX designer studying at the University of Washington, where I pursued a degree in Informatics with a concentration in{" "}
-    //       <a
-    //         href="https://ischool.uw.edu/programs/informatics"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //         style={{ textDecoration: "underline", color: "#2563eb" }}
-    //       >
-    //         Human-Computer Interaction (HCI)
-    //       </a>{" "}
-    //       and Data Science.
-    //     </p>
-    //     <p className="about-text">
-    //       Thanks for taking the time to explore my journey—I’m excited to share my story with you!
-    //     </p>
-    //   </div>
-
-    //   <div className="intro-image">
-    //     <img src="/images/me.jpg" alt="Runa portrait" className="about-img" />
-    //   </div>
     <section className="about-section">
       <div className="intro-section">
         <div className="intro-text animated-text">
@@ -72,16 +48,16 @@ function About() {
       <div className="about-section-block">
         <h2 className="about-subheader">Shaping Meaningful Experiences Everywhere</h2>
         <div className="about-block">
-          <img
-            src="/images/hackathon.jpg"
-            alt="Hackathon and projects"
-            className="about-img-block"
-          />
           <p className="about-text-block">
             Design is everywhere, influencing how we connect, learn, and grow. Whether analyzing data trends or building user-centered products,
             I’m passionate about creating experiences that inspire, empower, and leave a lasting impact.
             As I continue this journey, I remain dedicated to designing with empathy and purpose—one interaction at a time.
           </p>
+          <img
+            src="/images/hackathon.jpg"
+            alt="Hackathon and projects"
+            className="about-img-block"
+          />
         </div>
       </div>
 
@@ -98,7 +74,7 @@ function About() {
           </div>
           <div className="interest-card">
             <img src="/images/livehouse.jpg" alt="Music" className="interest-img" />
-            <p className="interest-label">Listening to music</p>
+            <p className="interest-label">Going to Livehouses</p>
           </div>
         </div>
       </div>

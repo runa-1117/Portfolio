@@ -221,7 +221,7 @@ a:hover {
 
 /* ---------- About ---------- */
 .about-section {
-  padding: 4rem 2rem;
+  padding: 10rem 2rem 4rem; 
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -229,17 +229,17 @@ a:hover {
 }
 
 .about-header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #1a202c; /* Dark gray */
-  margin-bottom: 1.5rem;
+  color: #1a202c; 
+  margin-bottom: 3rem;
 }
 
 .about-text {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   line-height: 1.75rem;
-  color: #4a5568; /* Gray text */
-  margin-bottom: 1rem;
+  color: #4a5568; 
+  margin-bottom: 2rem;
 }
 
 .intro-section {
@@ -255,6 +255,7 @@ a:hover {
 .intro-text {
   flex: 1;
   min-width: 300px;
+  text-align: left;
 }
 
 .intro-image {
@@ -264,8 +265,8 @@ a:hover {
 }
 
 .about-img {
-  width: 240px;
-  height: 240px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
@@ -285,40 +286,22 @@ a:hover {
   }
 }
 
-/* Responsive behavior for smaller screens */
-@media (max-width: 768px) {
-  .intro-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .intro-image {
-    margin-top: 1rem;
-  }
-}
-
-
-.about-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
 .about-section-block {
-  margin-top: 3rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  text-align: left; 
+  padding: 0 1.5rem;
 }
 
 .about-subheader {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .about-text-block {
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   margin-bottom: 1rem;
 }
 
@@ -326,11 +309,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .about-img-block {
   max-width: 100%;
+  max-width: 600px;
+  height: auto;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -338,13 +323,14 @@ a:hover {
 .interests-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
+  justify-content: space-between; 
+  gap: 2rem;
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .interest-card {
-  width: 260px;
+  flex: 1 1 calc(33.333% - 2rem);
   text-align: center;
 }
 
@@ -448,5 +434,41 @@ a:hover {
 
   .navbar-custom .nav-link {
     margin-left: 10px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image {
+    margin-top: 1rem;
+  }
+
+  .about-block {
+    flex-direction: column;
+  }
+
+  .about-img-block {
+    max-width: 100%;
+    height: auto;
+  } 
+}
+
+@media (max-width: 640px) {
+  .intro-image {
+    display: none;
+  }
+  
+  .interest-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .interest-img {
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
   }
 }

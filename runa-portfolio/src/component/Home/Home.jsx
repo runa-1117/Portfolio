@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import homeLogo from "../../assets/react.svg"; // ✅ 请换成你自己的图像路径
+// import homeLogo from "../../assets/react.svg"; // 
 import Type from "./Type"; 
-// import Particle from "../Particle"; // 你可以先注释它，后续再加
+
 
 function Home() {
   return (
