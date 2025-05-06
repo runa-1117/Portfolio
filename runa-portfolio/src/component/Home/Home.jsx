@@ -33,7 +33,7 @@ function Home() {
 
           <Col md={6} className="text-center">
             <img
-            src="images/profile.png"
+            src="/Portfolio/images/profile.png"
             alt="Runa profile"
             className="img-fluid"
             style={{ maxHeight: "400px", borderRadius: "12px" }}
