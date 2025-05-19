@@ -24,7 +24,7 @@ function About() {
           </p>
         </div>
         <div className="intro-image">
-          <img src="/Portfolio/images/me.jpg" alt="Runa portrait" className="about-img" />
+          <img src="/Images/me.jpg" alt="Runa portrait" className="about-img" />
         </div>
       </div>
 
@@ -54,7 +54,7 @@ function About() {
             As I continue this journey, I remain dedicated to designing with empathy and purpose—one interaction at a time.
           </p>
           <img
-            src="/Portfolio/images/hackathon.jpg"
+            src="/Images/hackathon.jpg"
             alt="Hackathon and projects"
             className="about-img-block"
           />
@@ -65,15 +65,15 @@ function About() {
         <h2 className="about-subheader">Outside of Work</h2>
         <div className="interests-grid">
           <div className="interest-card">
-            <img src="/Portfolio/images/travel.jpg" alt="Traveling" className="interest-img" />
+            <img src="/Images/travel.jpg" alt="Traveling" className="interest-img" />
             <p className="interest-label">Traveling</p>
           </div>
           <div className="interest-card">
-            <img src="/Portfolio/images/workout.jpg" alt="Workout" className="interest-img" />
+            <img src="/Images/workout.jpg" alt="Workout" className="interest-img" />
             <p className="interest-label">Working out</p>
           </div>
           <div className="interest-card">
-            <img src="/Portfolio/images/livehouse.jpg" alt="Music" className="interest-img" />
+            <img src="/Images/livehouse.jpg" alt="Music" className="interest-img" />
             <p className="interest-label">Going to Livehouses</p>
           </div>
         </div>
